@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/all.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Home page</title>
+    </head>
+
+    <body id="homeBody">
+        <section id="home" class="mb-5"> 
+            <div class="home-content vh-100">
+                <nav class="shadow-lg">
+                    <div class="container">
+                        <div class="nav-items d-flex justify-content-between py-4">
+                            <a href="#home" class="text-white text-decoration-none align-self-center h1">Customer And Transaction</a>
+                            <a id="logOutBtn" class="btn btn-outline-info py-3">Logout</a>
+                        </div>
+                    </div>
+                </nav>
+            <div class="container">
+                <input type="text" id="search" placeholder="Search by customer name or transaction amount" class="py-3 form-control m-3 bg-transparent text-white">
+                <div id="alert" class="d-none text-center text-danger ms-3 w-100 bg-transparent">
+                    <p class="d-inline h3">Search By Name Only "please enter valid name"</p><i class="fa-solid fa-warning ps-4 fa-3x text-danger"></i>
+                </div>
+                <table id="customer-table" class="table text-center mt-5 ms-3 text-white">
+                    <thead class="py-3 fw-bolder fs-3">
+                        <tr>
+                            <th>Customer Name</th>
+                            <th>Transaction Date</th>
+                            <th>Transaction Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmed Ali</td>
+                            <td>2022-01-01</td>
+                            <td>1000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <canvas id="transaction-chart" class="text-center ms-3 w-100 mb-4 shadow-lg bg-transparent d-none"></canvas>
+            </div>    
+        </section>
+        <section class="mt-5">
+            <div class="footer mb-3 text-center text-white fs-3">
+                @ibrahim ahmed 
+            </div>
+        </section>
+       
+        <script src="js/bootstrap.bundle.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script> <!-- Date adapter for Chart.js -->
+        <script src="./js/index.js"></script>
+        
+        
+    </body>
+</html>
