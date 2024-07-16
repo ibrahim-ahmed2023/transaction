@@ -1,7 +1,7 @@
 let logOutBtn=document.getElementById('logOutBtn');
 function logOut()
 {
-    location.href='../index.html';
+    location.href='index.html';
     localStorage.removeItem('userName');
 }
 logOutBtn.addEventListener('click',logOut)
@@ -10,7 +10,7 @@ let newChart;
 // Fetch data from JSON file
 async function getData() {
     try{
-        const response = await fetch('../api/data.json');
+        const response = await fetch('api/data.json');
         // console.log(response);
         if(!response.ok){
             throw new Error ('failed to fetch your data');
