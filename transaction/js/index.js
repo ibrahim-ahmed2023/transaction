@@ -1,9 +1,7 @@
 let logOutBtn=document.getElementById('logOutBtn');
 function logOut()
 {
-    //navigate login page
-    //remove userName from localstorage
-    window.location.href='../index.html';
+    location.href='../index.html';
     localStorage.removeItem('userName');
 }
 logOutBtn.addEventListener('click',logOut)
